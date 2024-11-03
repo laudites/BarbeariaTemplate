@@ -1,0 +1,9 @@
+.service-icon {
+  background-color: #1D2434; /* Cor de fundo */
+  padding: 15px; /* Adiciona espaço ao redor do ícone */
+  display: inline-block; /* Permite que o fundo envolva o ícone */
+  width: 105px;
+  height: 105px;
+  align-content: center;
+}
+

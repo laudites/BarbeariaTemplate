@@ -124,39 +124,36 @@ const HomePage = () => {
                             <ul id="navigation">
                               <li className="active">
                                 <a href="index.html">Home</a>
-                              </li>
+                              </li>                            
                               <li>
-                                <a href="about.html">About</a>
-                              </li>
-                              <li>
-                                <a href="services.html">Services</a>
-                              </li>
-                              <li>
-                                <a href="portfolio.html">Portfolio</a>
-                              </li>
-                              <li>
-                                <a href="blog.html">Blog</a>
+                                <a href="blog.html">Menu</a>
                                 <ul className="submenu">
                                   <li>
-                                    <a href="blog.html">Blog</a>
+                                    <a href="blog.html">Sobre</a>
                                   </li>
                                   <li>
-                                    <a href="blog_details.html">Blog Details</a>
+                                    <a href="blog_details.html">Serviços</a>
                                   </li>
                                   <li>
-                                    <a href="elements.html">Element</a>
+                                    <a href="elements.html">Preços</a>
+                                  </li>
+                                  <li>
+                                    <a href="elements.html">Agendamento</a>
+                                  </li>
+                                  <li>
+                                    <a href="elements.html">Depoimentos</a>
+                                  </li>
+                                  <li>
+                                    <a href="elements.html">Equipe</a>
                                   </li>
                                 </ul>
-                              </li>
-                              <li>
-                                <a href="contact.html">Contact</a>
-                              </li>
+                              </li>                           
                             </ul>
                           </nav>
                         </div>
                         <div className="header-right-btn f-right d-none d-lg-block ml-30">
                           <a href="from.html" className="btn header-btn">
-                            became a member
+                            Agendar agora
                           </a>
                         </div>
                       </div>

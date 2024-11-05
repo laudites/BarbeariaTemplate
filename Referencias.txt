@@ -1,0 +1,35 @@
+Site de uma barbearia que tem um site para amostra:
+https://www.vonbarbarov.com.br/unidades/boqueirao/
+
+PARA MIM:
+exemplo de um blog para barbearia:
+https://blog.appbarber.com.br/
+
+PARA CLIENTES:
+
+SITES PARA COPIAR:
+https://www.bestbarbers.app/
+https://barbeiroagenda.com.br/
+https://www.confrariadabarba.com.br/
+https://www.velhotranquilo.com.br/
+https://americanbarbershop.com.br/ -- o meu esta parecido com esse 
+
+beleza do site: https://www.lamafiabarbearia.com.br/
+
+OQUE DEVE TER NO SITE:
+ Agenda
+ Caixa
+ Comissões
+ Relatórios
+ Comissões
+ Cadastros de funcionarios
+ Alerta para Aniversariantes
+ Aviso via WhatsApp
+ Envio de SMS
+
+ FUTURO:
+ vendas
+ produtos e estoque
+ cadastro de clientes
+ nota fiscal
+ dashboard

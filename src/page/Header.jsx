@@ -12,7 +12,7 @@ const Header = () => {
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-2 col-md-1">
                 <div className="logo">
-                  <a href="/"><img src={logo} alt="Logo" /></a>
+                  <a href="/"><img src={logo} alt="Logo"/></a>
                 </div>
               </div>
               <div className="col-xl-10 col-lg-10 col-md-10">

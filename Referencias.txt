@@ -33,3 +33,19 @@ OQUE DEVE TER NO SITE:
  cadastro de clientes
  nota fiscal
  dashboard
+
+
+
+
+
+import React from 'react';
+
+ const Header = () => {
+
+    return(
+<>
+</>
+    )
+};
+
+export default Header;

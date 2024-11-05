@@ -2414,7 +2414,7 @@ hr {
   -webkit-text-fill-color: transparent;
 }
 .slider-area .stock-text h2:nth-child(2) {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(146, 146, 146, 0.2);
   -webkit-animation: animate 4s ease-in-out infinite;
   animation: animate 4s ease-in-out infinite;
 }
@@ -2860,7 +2860,7 @@ hr {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .best-pricing .pricing-img .pricing-img2 {
-    bottom: 9%;
+    display: none;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {

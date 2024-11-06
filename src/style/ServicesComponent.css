@@ -1,0 +1,46 @@
+.service-icon {
+    display: inline-block;
+    width: 70px; /* Tamanho da área circular */
+    height: 70px; /* Tamanho da área circular */
+    background-color: #1D2434; /* Cor do fundo */
+    border-radius: 50%; /* Faz a borda ficar redonda */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; /* Espaçamento entre o ícone e o texto */
+  }
+  
+  .mySwiper {
+    padding: 20px 0;
+  }
+  
+  .service-icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: #1D2434;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .service-cap h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .service-cap p {
+    font-size: 14px;
+  }
+.per001{
+    place-items: center;
+    align-items: center;
+}  
+.serviceGeral {
+    background-image: url(/src/img/gallery/dot.png);
+    background-size: 70px 98px;
+    background-position: right 135px top 0px;
+    background-repeat: no-repeat;
+}

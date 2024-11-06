@@ -1,8 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import logo from '../img/logo/logo.png';
 import "../style/HeaderComponent.css";
 
 const HeaderComponent = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null); // Cria uma referência para o menu
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Função que fecha o menu se o clique for fora do menu
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuOpen(false); // Fecha o menu
+    }
+  };
+
+  useEffect(() => {
+    // Adiciona o event listener para detectar cliques fora
+    document.addEventListener('mousedown', handleClickOutside);
+    
+    // Limpeza do event listener quando o componente for desmontado
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -11,7 +34,7 @@ const HeaderComponent = () => {
           <div className="container-fluid height100cent">
             <div className="row align-items-center height100cent">
               {/* Logo */}
-              <div className="col-xl-2 col-lg-2  height100cent dispflex">
+              <div className="col-xl-2 col-lg-2 height100cent dispflex">
                 <div className="logo height100cent">
                   <a href="index.html">
                     <img src={logo} alt="" />
@@ -65,29 +88,22 @@ const HeaderComponent = () => {
                 <div className="mobile_menu d-block d-lg-none">
                   <div className="slicknav_menu">
                     <a href="#" aria-haspopup="true" role="button" tabIndex="0" className="slicknav_btn slicknav_collapsed" style={{ outline: "none" }}>
-                      <span className="slicknav_menutxt">MENU</span>
-                      <span className="slicknav_icon">
-                        <span className="slicknav_icon-bar"></span>
-                        <span className="slicknav_icon-bar"></span>
-                        <span className="slicknav_icon-bar"></span>
-                      </span>
+                      <button onClick={toggleMenu} className="hamburger-btn">
+                        <span className="hamburger-icon">&#9776;</span> {/* Ícone sanduíche */}
+                      </button>
                     </a>
-                    <ul className="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style={{ display: "none" }}>
-                      <li className="active"><a href="index.html" role="menuitem" tabIndex="-1">Home</a></li>
-                      <li><a href="about.html" role="menuitem" tabIndex="-1">About</a></li>
-                      <li><a href="services.html" role="menuitem" tabIndex="-1">Services</a></li>
-                      <li><a href="portfolio.html" role="menuitem" tabIndex="-1">Portfolio</a></li>
-                      <li className="slicknav_collapsed slicknav_parent">
-                        <a href="blog.html" role="menuitem" tabIndex="-1" className="slicknav_item slicknav_row" style={{ outline: "none" }}>Blog</a>
-                        <span className="slicknav_arrow">+</span>
-                        <ul className="submenu slicknav_hidden" role="menu" aria-hidden="true" style={{ display: "none" }}>
-                          <li><a href="blog.html" role="menuitem" tabIndex="-1">Blog</a></li>
-                          <li><a href="blog_details.html" role="menuitem" tabIndex="-1">Blog Details</a></li>
-                          <li><a href="elements.html" role="menuitem" tabIndex="-1">Element</a></li>
+                    {isMenuOpen && (
+                      <div ref={menuRef} className={`jscenter mobile-menu-overlay ${isMenuOpen ? 'open' : ''}`}>
+                        <ul className="mobile-menu-list">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">Sobre</a></li>
+                          <li><a href="services.html">Serviços</a></li>
+                          <li><a href="portfolio.html">Portfolio</a></li>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="contact.html">Contato</a></li>
                         </ul>
-                      </li>
-                      <li><a href="contact.html" role="menuitem" tabIndex="-1">Contact</a></li>
-                    </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -102,9 +118,8 @@ const HeaderComponent = () => {
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       />
-
     </>
-  )
+  );
 };
 
 export default HeaderComponent;

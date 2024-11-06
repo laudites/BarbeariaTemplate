@@ -1,0 +1,46 @@
+/* Estilos de animação para os elementos */
+.hero__caption span,
+.hero__caption h1,
+.thumb-content-box {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Delay para cada elemento do slide */
+.hero__caption span {
+  animation-delay: 0.2s;
+}
+
+.hero__caption h1 {
+  animation-delay: 0.5s;
+}
+
+.thumb-content-box {
+  animation-delay: 0.8s;
+}
+
+/* Animação fadeInUp */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Evitar que o slider e a animação se sobreponham */
+.slick-slide {
+  visibility: hidden; /* Evita que slides fora da tela sejam visíveis */
+}
+
+.slick-active {
+  visibility: visible; /* Torna o slide visível apenas quando ativo */
+}
+
+.slick-active .hero__caption,
+.slick-active .thumb-content-box {
+  opacity: 1; /* Faz os itens se tornarem visíveis quando o slide está ativo */
+}

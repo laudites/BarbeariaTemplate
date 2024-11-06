@@ -29,9 +29,18 @@
   font-weight: bold;
 }
 
-.logo a img{
-  width: 100% !important;
-}
+
 .tela100vh{
-height: 100vh;
+  height: 100vh;
+}
+@media only screen and (min-width: 992px) and (max-width: 2000px) {
+  .logo a img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo a img {
+    width: 100%;
+  }
 }

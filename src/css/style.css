@@ -2245,7 +2245,7 @@ hr {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-height {
-    height: 600px;
+    height: 800px;
   }
 }
 @media (max-width: 575px) {
@@ -2374,7 +2374,12 @@ hr {
 }
 @media (max-width: 575px) {
   .slider-area .stock-text {
-    bottom: 178px;
+    bottom: 375px;
+  }
+}
+@media (max-width: 395px) {
+  .slider-area .stock-text {
+    bottom: 345px;
   }
 }
 @media (max-height: 800px){
@@ -2867,7 +2872,7 @@ hr {
   .best-pricing .pricing-img .pricing-img2 {
     position: absolute;
     bottom: 22%;
-    left: 3%;
+    left: 1%;
     width: 400px;
   }
 }

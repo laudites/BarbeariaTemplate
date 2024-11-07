@@ -79,3 +79,8 @@
 .swiper-button-prev::after {
   font-size: 20px; /* Ajuste o tamanho conforme necessário */
 }
+@media (max-width: 640px) {
+  .mySwiper .swiper-slide {
+    width: 100% !important;
+  }
+}

@@ -14,8 +14,8 @@ import galleryImage4 from "../img/gallery/gallery4.png";
                 <div className="row justify-content-center">
                   <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10">
                     <div className="section-tittle text-center mb-100">
-                      <span>our image gellary</span>
-                      <h2>some images from our barber shop</h2>
+                    <span>nossa galeria de imagens</span>
+                    <h2>algumas imagens da nossa barbearia</h2>
                     </div>
                   </div>
                 </div>

@@ -64,25 +64,25 @@ const servicesData = [
 export default function ServicesComponent() {
   return (
     <Swiper
-      spaceBetween={30} // Espaço entre os slides
-      slidesPerView={3} // Número de slides visíveis
-      loop={true} // Habilita o loop infinito
-      autoplay={{
-        //delay: 2500, // Tempo de espera entre os slides
-        delay: 1112500,
-        disableOnInteraction: false, // Não desabilita ao interagir
-      }}
-      navigation={true} // Habilita a navegação
-      modules={[Navigation, Autoplay]} // Define os módulos aqui
-      breakpoints={{
-        640: { slidesPerView: 1 }, // Um slide em telas pequenas
-        768: { slidesPerView: 2 }, // Dois slides em telas médias
-        1024: { slidesPerView: 3 }, // Três slides em telas grandes
-      }}
-      className="mySwiper"
-    >
+   spaceBetween={30}
+   slidesPerView="auto" // Ajusta a quantidade de slides automaticamente
+   centeredSlides={true} // Centraliza o slide ativo
+   loop={true}
+   autoplay={{
+     delay: 2500,
+     disableOnInteraction: false,
+   }}
+   navigation={true}
+   modules={[Navigation, Autoplay]}
+   breakpoints={{
+     640: { slidesPerView: 1 },
+     768: { slidesPerView: 2 },
+     1024: { slidesPerView: 3 },
+   }}
+   className="mySwiper"
+>
       {servicesData.map((service, index) => (
-        <SwiperSlide key={index} className='teste'>
+        <SwiperSlide key={index}>
           <div className="serviceGeral services-caption text-center mb-30 per001">
             <div className="scPers">
               <div className="service-icon">

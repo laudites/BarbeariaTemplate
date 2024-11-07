@@ -1,7 +1,7 @@
 import React from 'react';
 import pricing2 from "../img/gallery/pricing2.png";
 
- const PricingComponent = () => {
+const PricingComponent = () => {
 
     return(
 <>
@@ -10,48 +10,38 @@ import pricing2 from "../img/gallery/pricing2.png";
                 <div className="row justify-content-end">
                   <div className="col-xl-7 col-lg-7">
                     <div className="section-tittle mb-50">
-                      <span>Our Best Pricing</span>
+                      
                       <h2>
-                        We provide best price
-                        <br /> in the city!
+                      Tabela de Preços
                       </h2>
+                      <span>Serviços de qualidade e preços justos.</span>
                     </div>
-                    {/* Pricing  */}
+                    {/* Preços  */}
                     <div className="row">
                       <div className="col-lg-6 col-md-6 col-sm-6">
                         <div className="pricing-list">
                           <ul>
                             <li>
-                              Styling. . . . . . . . . . . . . . . . . . . . . .
-                              . . . . . . <span>$25</span>
+                            Corte de Cabelo. . . . . . . . . . . . . <span>R$45</span>
                             </li>
                             <li>
-                              Styling + Color. . . . . . . . . . . . . . . . . .
-                              . <span>$65</span>
+                            Barba. . . . . . . . . . . . . <span>R$35</span>
                             </li>
                             <li>
-                              Styling + Tint. . . . . . . . . . . . . . . . . .
-                              . . . .<span>$65</span>
+                            Design de Sobrancelhas. . . . . . . . . . . . . <span>R$15</span>
                             </li>
                             <li>
-                              {" "}
-                              Semi-permanent wave. . . . . . . . . . . . .
-                              <span>$65</span>
+                              Corte de Cabelo + Barba. . . . . . . . . . . . . 
+                              <span>R$70</span>
                             </li>
                             <li>
-                              {" "}
-                              Cut + Styling. . . . . . . . . . . . . . . . . . .
-                              . . .<span>$63</span>
+                              Barboterapia. . . . . . . . . . . . . <span>R$55</span>
                             </li>
                             <li>
-                              {" "}
-                              Cut + Styling + Color. . . . . . . . . . . . .{" "}
-                              <span>$100</span>
+                              Corte + Sobrancelhas + Coloração. . . . .<span>R$100</span>
                             </li>
                             <li>
-                              {" "}
-                              Cut + Styling + Tint. . . . . . . . . . . . . . .
-                              .<span>$100</span>
+                              Corte + Sobrancelhas + Tonalização. . . . .<span>R$100</span>
                             </li>
                           </ul>
                         </div>
@@ -60,28 +50,22 @@ import pricing2 from "../img/gallery/pricing2.png";
                         <div className="pricing-list">
                           <ul>
                             <li>
-                              Cut. . . . . . . . . . . . . . . . . . . . . . . .
-                              . . . . .<span>$25</span>
+                            Selagem a partir de. . . . . . . . . . . . . <span>R$100</span>
                             </li>
                             <li>
-                              Shave. . . . . . . . . . . . . . . . . . . . . . .
-                              . . . <span>$65</span>
+                            Reconstrução a partir de. . . . . . . . . . . . . <span>R$100</span>
                             </li>
                             <li>
-                              Beard trim. . . . . . . . . . . . . . . . .{" "}
-                              <span>$65</span>
+                            Hidrataçãoa partir de. . . . . . . . . . . . . <span>R$100</span>
                             </li>
                             <li>
-                              Cut + beard trim. . . . . . . . . . . . . . . . .{" "}
-                              <span>$65</span>
+                              planos gold. . . . . . . . . . . . . <span>R$65</span>
                             </li>
                             <li>
-                              Cut + shave. . . . . . . . . . . . . . . . . . . .
-                              . . .<span>$63</span>
+                              planos prata. . . . . . . . . . . . . <span>R$50</span>
                             </li>
                             <li>
-                              Clean up. . . . . . . . . . . . . . . . . . . . .
-                              . . .<span>$100</span>
+                              Limpeza. . . . . . . . . . . . . <span>R$100</span>
                             </li>
                           </ul>
                         </div>
@@ -90,7 +74,7 @@ import pricing2 from "../img/gallery/pricing2.png";
                   </div>
                 </div>
               </div>
-              {/* pricing img */}
+              {/* imagem de preços */}
               <div className="pricing-img">                
                 <img className="pricing-img2" src={pricing2} alt="" />
               </div>

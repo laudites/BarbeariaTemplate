@@ -103,11 +103,19 @@
         max-width: 540px;
     }
     .slider-height {
-        height: 600px;
+        height: 800px;
     }
     .col-sm-10 {
         -ms-flex: 0 0 83.333333%;
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
     }
+  }
+
+  @media (max-height: 735px) {
+    
+    .slider-height {
+        height: 600px;
+    }
+    
   }

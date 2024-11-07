@@ -29,10 +29,19 @@
   font-weight: bold;
 }
 
-
 .tela100vh{
   height: 100vh;
 }
+
+/* No arquivo CSS (HomePage.css) */
+#back-top {
+  display: none; /* Garante que comece invisível */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 2000px) {
   .logo a img {
     width: 100%;

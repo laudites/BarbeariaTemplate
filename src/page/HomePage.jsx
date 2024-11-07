@@ -82,7 +82,20 @@ const HomePage = () => {
     return () => clearInterval(progressInterval);
   }, [isLoading]);
 
+ // Adiciona o código para controlar a visibilidade do botão back-top com a rolagem
+ useEffect(() => {
+  const handleScroll = () => {
+    const backTopButton = document.getElementById("back-top");
+    if (window.scrollY > 200) {
+      backTopButton.style.display = "block"; // Mostra o botão após 200px de rolagem
+    } else {
+      backTopButton.style.display = "none"; // Esconde quando está acima de 200px
+    }
+  };
 
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <div className="homepage">

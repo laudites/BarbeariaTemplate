@@ -13,8 +13,8 @@ import team3 from "../img/gallery/team3.png";
                 <div className="row justify-content-center">
                   <div className="col-xl-8 col-lg-8 col-md-11 col-sm-11">
                     <div className="section-tittle text-center mb-100">
-                      <span>Professional Teams</span>
-                      <h2>Our award winner hair cut exparts for you</h2>
+                      <span>Time de profissionais</span>
+                      <h2>Nossos especialistas para você</h2>
                     </div>
                   </div>
                 </div>

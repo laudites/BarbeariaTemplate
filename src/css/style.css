@@ -2377,6 +2377,11 @@ hr {
     bottom: 178px;
   }
 }
+@media (max-height: 800px){
+  .slider-area .stock-text {
+    bottom: 255px;
+  }
+}
 .slider-area .stock-text h2 {
   font-size: 122px;
   font-weight: 700;
@@ -2860,7 +2865,10 @@ hr {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .best-pricing .pricing-img .pricing-img2 {
-    display: none;
+    position: absolute;
+    bottom: 22%;
+    left: 3%;
+    width: 400px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

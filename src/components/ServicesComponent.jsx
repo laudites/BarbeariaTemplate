@@ -1,12 +1,12 @@
 import React from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../style/servicesComponent.css';
+import 'swiper/css/autoplay'; // Importa o CSS para autoplay
+import { Navigation, Autoplay } from 'swiper/modules'; // Importa módulos
 
+import '../style/servicesComponent.css';
 // Dados dos serviços
 const servicesData = [
   {
@@ -61,34 +61,30 @@ const servicesData = [
   }
 ];
 
-export default function App() {
+export default function ServicesComponent() {
   return (
-    <>
-      <Swiper
-        spaceBetween={30}  // Espaço entre os slides
-        slidesPerView={3}  // Número de slides visíveis
-        loop={true}  // Habilita o loop infinito
-        autoplay={{
-          delay: 2500,  // Tempo de espera entre os slides
-          disableOnInteraction: false,  // Não desabilita ao interagir
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 1,  // Um slide visível em telas pequenas
-          },
-          768: {
-            slidesPerView: 2,  // Dois slides visíveis em telas médias
-          },
-          1024: {
-            slidesPerView: 3,  // Três slides visíveis em telas grandes
-          },
-        }}
-        navigation={true}  // Habilita a navegação
-        className="mySwiper"
-      >
-        {servicesData.map((service, index) => (
-          <SwiperSlide key={index}>
-            <div className="serviceGeral services-caption text-center mb-30 per001">
+    <Swiper
+      spaceBetween={30} // Espaço entre os slides
+      slidesPerView={3} // Número de slides visíveis
+      loop={true} // Habilita o loop infinito
+      autoplay={{
+        //delay: 2500, // Tempo de espera entre os slides
+        delay: 1112500,
+        disableOnInteraction: false, // Não desabilita ao interagir
+      }}
+      navigation={true} // Habilita a navegação
+      modules={[Navigation, Autoplay]} // Define os módulos aqui
+      breakpoints={{
+        640: { slidesPerView: 1 }, // Um slide em telas pequenas
+        768: { slidesPerView: 2 }, // Dois slides em telas médias
+        1024: { slidesPerView: 3 }, // Três slides em telas grandes
+      }}
+      className="mySwiper"
+    >
+      {servicesData.map((service, index) => (
+        <SwiperSlide key={index} className='teste'>
+          <div className="serviceGeral services-caption text-center mb-30 per001">
+            <div className="scPers">
               <div className="service-icon">
                 <img src={service.icon} alt={service.title} width="50" height="50" />
               </div>
@@ -97,9 +93,9 @@ export default function App() {
                 <p>{service.description}</p>
               </div>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }

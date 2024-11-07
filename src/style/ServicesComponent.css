@@ -41,6 +41,41 @@
 .serviceGeral {
     background-image: url(/src/img/gallery/dot.png);
     background-size: 70px 98px;
-    background-position: right 135px top 0px;
+    background-position: right 135px top 10px;
     background-repeat: no-repeat;
+}
+  
+.scPers{
+  place-items: center;
+  background-color: #F9F5F2;
+  padding: 20px;
+  width: 80%;
+  height: 250px;  
+  border-radius: 20px;
+}
+
+/* Customização das setas do Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1D2434; /* Altere a cor das setas */
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+ 
+  color: #D19F68B3; /* Altere a cor das setas ao passar o mouse */
+}
+
+/* Posicione as setas para que fiquem centralizadas verticalmente */
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Tamanho do ícone de seta */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; /* Ajuste o tamanho conforme necessário */
 }

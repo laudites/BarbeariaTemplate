@@ -17,7 +17,6 @@ import "../css/nice-select.css";
 import "../css/style.css";
 
 import logo from "../img/logo/logo.png";
-import sectionBg from "../img/gallery/section_bg02.png";
 
 
 import HeaderComponent from "../components/HeaderComponent";
@@ -28,7 +27,9 @@ import TeamComponent from "../components/TeamComponent";
 import PricingComponent from "../components/PricingComponent";
 import GalleryComponent from "../components/GalleryComponent";
 import CommentsComponent from "../components/CommentsComponent";
-import BlogComponent from "../components/BlogComponent";
+import MapComponent from "../components/MapComponent";
+import FooterComponent from "../components/FooterComponent";
+import FooterInfo from "./FooterInfo";
 
 
 
@@ -143,9 +144,10 @@ const HomePage = () => {
             {/* Cut Details Start */}
             <CommentsComponent></CommentsComponent>
             {/* Cut Details End */}
-
+            <MapComponent></MapComponent>
+            <FooterInfo></FooterInfo>
             {/* Blog Area Start */}
-            <BlogComponent></BlogComponent>
+            <FooterComponent></FooterComponent>
             {/* Blog Area End */}
             {/* Scroll Up */}
             <div id="back-top">

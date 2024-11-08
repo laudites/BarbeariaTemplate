@@ -1,0 +1,48 @@
+.footer_section {
+    background-color: #222; /* Cor do rodapé */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-languages {
+    margin-bottom: 20px;
+  }
+  
+  .footer-languages-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-languages-list li {
+    margin: 0 15px; /* Espaçamento entre os links */
+  }
+  
+  .footer-languages-list li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-languages-list li a:hover {
+    color: #fec913; /* Cor do link ao passar o mouse */
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+      .footer-languages-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer-languages-list li {
+        margin: 10px 0;
+      }
+    
+      .footer_section p {
+        font-size: 12px; 
+      }
+      .footer_section{
+        background-color: black;
+      }
+    }

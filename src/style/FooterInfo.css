@@ -1,44 +1,77 @@
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .footer-section {
-    margin: 15px;
-  }
-  
-  .footer-links,
-  .footer-social-links {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links li,
-  .footer-social-links li {
-    margin: 5px 0;
-  }
-  
-  .footer-links a,
-  .footer-social-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-links a:hover,
-  .footer-social-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    padding-top: 15px;
-    font-size: 0.9em;
-  }
-  
+.footerInfo {
+  background-color: #353434;
+  color: #fff;
+  padding: 20px 0;
+  background-image: url('../img/gallery/about-shape.png');
+  background-size: cover; /* Ajusta a imagem para cobrir todo o background */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.upper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.col {
+  flex: 1 1 200px;
+  margin: 15px 0;
+}
+
+.col h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.col ul li {
+  margin: 5px 0;
+}
+
+.col ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.col ul li a:hover {
+  text-decoration: underline;
+}
+
+
+.social a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -83,20 +83,20 @@ const HomePage = () => {
     return () => clearInterval(progressInterval);
   }, [isLoading]);
 
- // Adiciona o código para controlar a visibilidade do botão back-top com a rolagem
- useEffect(() => {
-  const handleScroll = () => {
-    const backTopButton = document.getElementById("back-top");
-    if (window.scrollY > 200) {
-      backTopButton.style.display = "block"; // Mostra o botão após 200px de rolagem
-    } else {
-      backTopButton.style.display = "none"; // Esconde quando está acima de 200px
-    }
-  };
+  // Adiciona o código para controlar a visibilidade do botão back-top com a rolagem
+  useEffect(() => {
+    const handleScroll = () => {
+      const backTopButton = document.getElementById("back-top");
+      if (window.scrollY > 200) {
+        backTopButton.style.display = "block"; // Mostra o botão após 200px de rolagem
+      } else {
+        backTopButton.style.display = "none"; // Esconde quando está acima de 200px
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="homepage">
@@ -122,29 +122,45 @@ const HomePage = () => {
 
           <main>
             {/* Slider Area Start */}
-           <SliderComponent></SliderComponent>
+            <section id="home">
+              <SliderComponent></SliderComponent>
+            </section>
             {/* Slider Area End */}
             {/* About Area Start */}
-            <AboutComponent></AboutComponent>
+            <section id="about">
+              <AboutComponent></AboutComponent>
+            </section>
             {/* About-2 Area End */}
             {/* Services Area Start */}
-            <ServicesComponent></ServicesComponent>
+            <section id="services">
+              <ServicesComponent></ServicesComponent>
+            </section>
             {/* Services Area End */}
             {/* Team Start */}
-            <TeamComponent></TeamComponent>
+            <section id="team">
+              <TeamComponent></TeamComponent>
+            </section>
             {/* Team End */}
             {/* Best Pricing Area Start */}
-            <PricingComponent></PricingComponent>
+            <section id="pricing">
+              <PricingComponent></PricingComponent>
+            </section>
             {/* Best Pricing Area End */}
 
             {/* Gallery Area Start */}
-          <GalleryComponent></GalleryComponent>
+            <section id="gallery">
+              <GalleryComponent></GalleryComponent>
+            </section>
             {/* Gallery Area End */}
 
             {/* Cut Details Start */}
-            <CommentsComponent></CommentsComponent>
+            <section id="comments">
+              <CommentsComponent></CommentsComponent>
+            </section>
             {/* Cut Details End */}
-            <MapComponent></MapComponent>
+            <section id="map">
+              <MapComponent></MapComponent>
+            </section>
             <FooterInfo></FooterInfo>
             {/* Blog Area Start */}
             <FooterComponent></FooterComponent>

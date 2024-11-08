@@ -1,53 +1,57 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../style/FooterInfo.css'; // Estilos personalizados para o footer, se necessário
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import '../style/FooterInfo.css';
 
 const FooterInfo = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        {/* Mapa do Site */}
-        <div className="footer-section">
-          <h4>Mapa do Site</h4>
-          <ul className="footer-links">
-            <li>
-              <Link to="/">Início</Link>
-            </li>
-            <li>
-              <Link to="/sobre">Sobre Nós</Link>
-            </li>
-            <li>
-              <Link to="/servicos">Serviços</Link>
-            </li>
-            <li>
-              <Link to="/galeria">Galeria</Link>
-            </li>
-            <li>
-              <Link to="/contato">Contato</Link>
-            </li>
-          </ul>
-        </div>
+    <footer className="footerInfo">
+      <div className="content">
+        <div className="upper">
+          {/* Logo */}
+          <div className="logo">
+            <img src="https://www.myneweradigital.com/assets/NeweraLogoBranco3-UO59f0_Z.png" alt="Logo" />
+          </div>
 
-        {/* Contato */}
-        <div className="footer-section">
-          <h4>Contato</h4>
-          <p>Endereço: Rua Exemplo, 123, Bairro, Cidade</p>
-          <p>Telefone: (99) 99999-9999</p>
-          <p>Email: contato@exemplo.com</p>
-        </div>
+          {/* Institucional */}
+          <div className="col">
+            <h3>Institucional</h3>
+            <ul>
+              <li><a href="#home">Inicial</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#team">Equipe</a></li>
+              <li><a href="#pricing">Tabela de preços</a></li>
+              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="#comments">Depoimentos</a></li>
+              <li><a href="#map">Mapa</a></li>
+            </ul>
+          </div>
 
-        {/* Redes Sociais */}
-        <div className="footer-section">
-          <h4>Siga-nos</h4>
-          <ul className="footer-social-links">
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-          </ul>
+          {/* Produtos & Serviços */}
+          <div className="col">
+            <h3>Serviços</h3>
+            <ul>
+              <li><Link to="/equipamentos">Equipamentos</Link></li>
+              <li><Link to="/assistencia-tecnica">Assistência Técnica</Link></li>
+              <li><Link to="/contato">Fale Conosco</Link></li>
+            </ul>
+          </div>
+
+          {/* Redes Sociais */}
+          <div className="col">
+            <h3>Redes Sociais</h3>
+            <div className="social">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <FaFacebook className="social-icon" /> Facebook
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="social-icon" /> Instagram
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-
-   
     </footer>
   );
 };

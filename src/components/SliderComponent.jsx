@@ -60,14 +60,18 @@ const SliderComponent = () => {
       </div>
 
       {/* Botão com seta */}
-      <div className="thumb-content-box">
-        <div className="thumb-content">
-          <h3>faça um agendamento</h3>
-          <a href="#">
-            <i className="fas fa-long-arrow-alt-right"></i>
-          </a>
-        </div>
-      </div>
+      <a href="agenda/clientes" style={{ textDecoration: "none" }}>
+  <div
+    className="thumb-content-box"
+    style={{ cursor: "pointer",alignItems: "center" }} // Indica que é clicável
+  >
+    <div className="thumb-content">
+      <h3>faça um agendamento</h3>
+      <i className="fas fa-long-arrow-alt-right fa-2x" style={{ color: "black" }}></i>
+    </div>
+  </div>
+</a>
+
     </div>
   );
 };

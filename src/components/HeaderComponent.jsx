@@ -51,25 +51,31 @@ const HeaderComponent = () => {
                           <a href="index.html">Home</a>
                         </li>
                         <li>
-                          <a href="blog.html">Menu</a>
+                          <a href="#">Menu</a>
                           <ul className="submenu">
                             <li>
-                              <a href="blog.html">Sobre</a>
+                              <a href="#about">Sobre</a>
                             </li>
                             <li>
-                              <a href="blog_details.html">Serviços</a>
+                              <a href="#services">Serviços</a>
                             </li>
                             <li>
-                              <a href="elements.html">Preços</a>
+                              <a href="#team">Equipe</a>
                             </li>
                             <li>
-                              <a href="elements.html">Agendamento</a>
+                              <a href="#pricing">Preços</a>
                             </li>
                             <li>
-                              <a href="elements.html">Depoimentos</a>
+                              <a href="#GalleryComponent">Imagens Barbearia</a>
                             </li>
                             <li>
-                              <a href="elements.html">Equipe</a>
+                              <a href="#comments">Depoimentos</a>
+                            </li>
+                            <li>
+                              <a href="#map">Endereço</a>
+                            </li>
+                            <li>
+                              <a href="agenda/clientes">Agendamento</a>
                             </li>
                           </ul>
                         </li>

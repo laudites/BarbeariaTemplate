@@ -8,7 +8,7 @@ const FooterComponent = () => {
         <div className="footer-content">
           <div className="footer-text">
             <p>&copy; 2024 Todos os Direitos Reservados. Desenvolvido por 
-              <a style={{color: "#fec913"}} href="https://neweradigital.com"> NewEra Digital</a>
+              <a style={{color: "#fec913"}} href="https://myneweradigital.com"> NewEra Digital</a>
             </p>
           </div>
         </div>

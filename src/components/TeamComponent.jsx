@@ -7,8 +7,8 @@ import team3 from "../img/gallery/team3.png";
 
     return(
 <>
-<div className="team-area pb-180">
-              <div className="container">
+<div className="team-area">
+              <div className="container section-padding30">
                 {/* Section Tittle */}
                 <div className="row justify-content-center">
                   <div className="col-xl-8 col-lg-8 col-md-11 col-sm-11">

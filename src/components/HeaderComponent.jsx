@@ -83,7 +83,7 @@ const HeaderComponent = () => {
                     </nav>
                   </div>
                   <div className="header-right-btn f-right d-none d-lg-block ml-30">
-                    <a href="http://localhost:5173/agenda/clientes" className="btn header-btn">
+                    <a href="https://marcaja2.myneweradigital.com/agenda/clientes" className="btn header-btn">
                       Agendar agora
                     </a>
                   </div>

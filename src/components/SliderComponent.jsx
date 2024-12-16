@@ -60,7 +60,7 @@ const SliderComponent = () => {
       </div>
 
       {/* Botão com seta */}
-      <a href="agenda/clientes" style={{ textDecoration: "none" }}>
+      <a href="https://marcaja2.myneweradigital.com/agenda/clientes" style={{ textDecoration: "none" }}>
   <div
     className="thumb-content-box"
     style={{ cursor: "pointer",alignItems: "center" }} // Indica que é clicável

@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import '../style/FooterInfo.css';
+import FeedbackForm from '../components/FeedbackForm';
 
 const FooterInfo = () => {
   return (
-    <footer className="footerInfo">
+    <footer className="footerInfo">      
       <div className="content">
         <div className="upper">
           {/* Logo */}

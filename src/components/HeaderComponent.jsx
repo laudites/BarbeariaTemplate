@@ -48,7 +48,7 @@ const HeaderComponent = () => {
                     <nav>
                       <ul id="navigation">
                         <li className="active">
-                          <a href="index.html">Home</a>
+                          <a href="#home">Home</a>
                         </li>
                         <li>
                           <a href="#">Menu</a>
@@ -66,7 +66,7 @@ const HeaderComponent = () => {
                               <a href="#pricing">Preços</a>
                             </li>
                             <li>
-                              <a href="#GalleryComponent">Imagens Barbearia</a>
+                              <a href="#gallery">Imagens Barbearia</a>
                             </li>
                             <li>
                               <a href="#comments">Depoimentos</a>
@@ -75,7 +75,7 @@ const HeaderComponent = () => {
                               <a href="#map">Endereço</a>
                             </li>
                             <li>
-                              <a href="agenda/clientes">Agendamento</a>
+                              <a href="https://marcaja2.myneweradigital.com/agenda/clientes">Agendamento</a>
                             </li>
                           </ul>
                         </li>
@@ -101,12 +101,30 @@ const HeaderComponent = () => {
                     {isMenuOpen && (
                       <div ref={menuRef} className={`jscenter mobile-menu-overlay ${isMenuOpen ? 'open' : ''}`}>
                         <ul className="mobile-menu-list">
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="about.html">Sobre</a></li>
-                          <li><a href="services.html">Serviços</a></li>
-                          <li><a href="portfolio.html">Portfolio</a></li>
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="contact.html">Contato</a></li>
+                        <li>
+                              <a href="#about">Sobre</a>
+                            </li>
+                            <li>
+                              <a href="#services">Serviços</a>
+                            </li>
+                            <li>
+                              <a href="#team">Equipe</a>
+                            </li>
+                            <li>
+                              <a href="#pricing">Preços</a>
+                            </li>
+                            <li>
+                              <a href="#gallery">Imagens Barbearia</a>
+                            </li>
+                            <li>
+                              <a href="#comments">Depoimentos</a>
+                            </li>
+                            <li>
+                              <a href="#map">Endereço</a>
+                            </li>
+                            <li>
+                              <a href="https://marcaja2.myneweradigital.com/agenda/clientes">Agendamento</a>
+                            </li>
                         </ul>
                       </div>
                     )}

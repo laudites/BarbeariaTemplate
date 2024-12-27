@@ -65,10 +65,7 @@
         height: 100%;
     }
 
-    .height100cent a img {
-        height: 100%;
-        width: 100%;
-    }
+
 
     .dispflex {
         display: flex;
@@ -82,10 +79,7 @@
     .height100cent {
         height: 100%;
     }
-    .height100cent a img {
-        height: 100%;
-       
-    }
+ 
 
 }
 @media (max-width: 575px) {
@@ -95,10 +89,7 @@
     .height100cent {
         height: 100%;
     }
-    .height100cent a img {
-        height: 100%;
-       
-    }
+   
     .container {
         max-width: 540px;
     }

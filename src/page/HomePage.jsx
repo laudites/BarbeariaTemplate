@@ -30,6 +30,7 @@ import CommentsComponent from "../components/CommentsComponent";
 import MapComponent from "../components/MapComponent";
 import FooterComponent from "../components/FooterComponent";
 import FooterInfo from "./FooterInfo";
+import FeedbackForm from "../components/FeedbackForm";
 
 
 
@@ -160,7 +161,7 @@ const HomePage = () => {
             {/* Cut Details End */}
             <section id="map">
               <MapComponent></MapComponent>
-            </section>
+            </section>  
             <FooterInfo></FooterInfo>
             {/* Blog Area Start */}
             <FooterComponent></FooterComponent>

@@ -1,0 +1,81 @@
+.feedback-card{
+padding: 100px 100px 0px 100px;
+}
+.feedback-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #f9f5f2;
+}
+
+.feedback-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f9f5f2;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  background-color: #f9f5f2;
+  color: #1d2434;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #f9f5f2;
+}
+.all-feedback{
+    text-align: center;
+}
+.all-feedback ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feedback-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.feedback-item:last-child {
+  border-bottom: none;
+}
+/* Animação de piscar */
+/* Animação de piscar em verde */
+@keyframes blinkGreen {
+  0%, 100% {
+      background-color: #16802f; /* Verde padrão do Bootstrap */
+      color: white;
+  }
+  50% {
+      background-color: #51b366; /* Tom de verde mais escuro */
+      color: white;
+  }
+}
+
+/* Classe de animação para o botão */
+.blinking {
+  animation: blinkGreen 0.8s infinite;
+  border: none; /* Remove a borda para foco apenas na cor */
+}
+@media (max-width: 768px) {
+  .feedback-card{
+    padding: 80px 0px;
+
+  }
+}

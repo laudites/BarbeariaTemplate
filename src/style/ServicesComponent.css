@@ -1,29 +1,27 @@
 .service-icon {
-    display: inline-block;
-    width: 70px; /* Tamanho da área circular */
-    height: 70px; /* Tamanho da área circular */
-    background-color: #1D2434; /* Cor do fundo */
-    border-radius: 50%; /* Faz a borda ficar redonda */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px; /* Espaçamento entre o ícone e o texto */
+  display: flex; /* Certifique-se de que Flexbox está aplicado */
+  width: 70px; /* Tamanho da área circular */
+  height: 70px; /* Tamanho da área circular */
+  background-color: #1D2434; /* Cor do fundo */
+  border-radius: 50%; /* Faz a borda ficar redonda */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-bottom: 15px; /* Espaçamento entre o ícone e o texto */
+  text-align: center; /* Alinha o texto, caso necessário */
+}
+
+  @supports (-webkit-appearance: none) {
+    .service-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   
+
+
   .mySwiper {
     padding: 20px 0;
-  }
-  
-  .service-icon {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    background-color: #1D2434;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
   }
   
   .service-cap h4 {
@@ -35,10 +33,20 @@
     font-size: 14px;
     color: #1D2434;
   }
+  @supports (-webkit-touch-callout: none) {
+    .per001 {
+      align-items: center ; /* Substituição para Safari */
+      justify-items: center;
+    }
+  }
 .per001{
     place-items: center;
     align-items: center;
+    display: grid; /* Certifique-se de que o contêiner é um grid */
+    
+    justify-items: center; /* Alinha os itens horizontalmente ao centro */
 }  
+
 .serviceGeral {
     background-image: url(/src/img/gallery/dot.png);
     background-size: 70px 98px;
@@ -46,14 +54,25 @@
     background-repeat: no-repeat;
 }
   
-.scPers{
-  place-items: center;
+.scPers {
+  display: grid; /* Define o contêiner como Grid Layout */
+  align-items: center; /* Centraliza verticalmente */
+  justify-items: center; /* Centraliza horizontalmente */
   background-color: #F9F5F2;
   padding: 20px;
   width: 80%;
   height: 250px;  
   border-radius: 20px;
 }
+
+
+@supports (-webkit-touch-callout: none) {
+  .scPers {
+    align-items: center; /* Ajuste adicional para Safari */
+    justify-items: center; /* Garantia de centralização */
+  }
+}
+
 
 /* Customização das setas do Swiper */
 .swiper-button-next,

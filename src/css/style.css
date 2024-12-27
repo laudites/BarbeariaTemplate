@@ -2307,6 +2307,12 @@ hr {
   line-height: 1.4;
   text-transform: uppercase;
 }
+@supports (-webkit-touch-callout: none) {
+  .slider-area {
+    background-attachment: scroll; /* Ajuste apenas para Safari Mobile */
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .hero__caption h1 {
     font-size: 54px;
@@ -2316,6 +2322,7 @@ hr {
   .slider-area .hero__caption h1 {
     font-size: 50px;
   }
+
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-area .hero__caption h1 {
@@ -2472,21 +2479,25 @@ hr {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .thumb-content-box {
     width: 40%;
+    height: 10%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area .thumb-content-box {
     width: 45%;
+    height: 10%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-area .thumb-content-box {
     width: 58%;
+    height: 10%;
   }
 }
 @media (max-width: 575px) {
   .slider-area .thumb-content-box {
     width: 58%;
+    height: 10%;
   }
 }
 .slider-area .thumb-content-box .thumb-content {

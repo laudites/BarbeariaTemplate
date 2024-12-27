@@ -65,7 +65,7 @@ const SliderComponent = () => {
     className="thumb-content-box"
     style={{ cursor: "pointer",alignItems: "center" }} // Indica que é clicável
   >
-    <div className="thumb-content">
+    <div className="thumb-content tcPer">
       <h3>faça um agendamento</h3>
       <i className="fas fa-long-arrow-alt-right fa-2x" style={{ color: "black" }}></i>
     </div>

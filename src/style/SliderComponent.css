@@ -44,3 +44,7 @@
 .slick-active .thumb-content-box {
   opacity: 1; /* Faz os itens se tornarem visíveis quando o slide está ativo */
 }
+.tcPer{
+  height: 100%;
+  align-items: center !important;
+}
